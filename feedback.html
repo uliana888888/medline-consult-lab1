@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв'язок — MedLine Consult</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><rect width='48' height='48' rx='10' fill='%230d9488'/><path d='M21 12h6v9h9v6h-9v9h-6v-9h-9v-6h9z' fill='white'/></svg>" alt="Логотип MedLine Consult" width="48" height="48">
+            <h1>MedLine Consult — Зворотній зв'язок</h1>
+        </div>
+        <nav aria-label="Навігація сторінки зворотного зв'язку">
+            <a href="index.html"><button type="button">На Головну сторінку</button></a>
+            <a href="services.html"><button type="button">Послуги</button></a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Форма зворотного зв'язку</h2>
+        <p>Заповніть форму нижче, щоб надіслати звернення адміністрації центру онлайн-консультацій.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Персональна інформація</legend>
+
+                <p>
+                    <label for="fullname">1. Прізвище та ім'я:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Введіть прізвище та ім'я" required>
+                </p>
+
+                <p>
+                    <label for="email">2. E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </p>
+
+                <p>
+                    <label for="age">3. Вік:</label><br>
+                    <input type="number" id="age" name="age" min="1" max="120" placeholder="Вкажіть ваш вік" required>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="purpose">4. Мета зворотнього зв'язку:</label><br>
+                <select id="purpose" name="purpose" required>
+                    <option value="cooperation">співпраця</option>
+                    <option value="complaint">скарга на якість послуги</option>
+                    <option value="suggestion">пропозиція</option>
+                    <option value="bug">наявність помилки на сайті</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="details">5. Детально:</label><br>
+                <textarea id="details" name="details" rows="6" cols="50" maxlength="500" style="width: 420px; height: 120px; resize: none;" placeholder="Опишіть деталі вашого звернення (до 500 символів)..." required></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Я надаю згоду на обробку персональної інформації</label>
+            </p>
+
+            <p>
+                <button type="submit">Відправити інформацію</button>
+                <button type="reset">Очистити форму</button>
+            </p>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Адреса: вул. Січових Стрільців, 42, оф. 305, м. Київ | Тел.: +38 (044) 234-56-78</p>
+        <p>&copy; 2026 MedLine Consult. Усі права захищено.</p>
+    </footer>
+</body>
+</html>
